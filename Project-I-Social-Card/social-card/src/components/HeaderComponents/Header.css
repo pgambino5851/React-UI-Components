@@ -1,1 +1,40 @@
 /* All styles for your header Components live here */
+.header-container{
+    /* width: 800px;
+    height: 700px; */
+    /* background: red; */
+    margin: 0 auto;
+    /* margin-top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon-container{
+    width: 7%;
+}
+
+.icon-container img{
+    width: 100%;
+}
+
+.header-copy-container{
+width: 92%;
+} 
+
+.header-copy-container h1{
+    margin-bottom: 2%;
+}
+
+.header-copy-container p{
+    width: 100%;
+}
+
+h1 span .interpunct{
+    font-size: 1.8rem;
+}
+
+.header-copy-container span{
+    font-size: 1.6rem;
+    color: gray;
+}

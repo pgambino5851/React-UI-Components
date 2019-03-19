@@ -1,0 +1,12 @@
+.footer-container{
+    width: 49%;
+    margin-left: 7%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container i{
+    
+    cursor: pointer;
+}

@@ -1,9 +1,20 @@
-.action-btn{
+.clear-btn{
     background:none;
     border: none;
     font-size: 4rem;
     margin: 0 auto;
     width: 100%;
-    height: 17.5%;
+    height: 20%;
+    border: 1px solid #979797;
+}
+
+.zero-btn{
+    background:none;
+    border: none;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    height: 20%;
     border: 1px solid #979797;
 }

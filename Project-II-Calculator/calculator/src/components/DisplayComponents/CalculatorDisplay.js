@@ -2,6 +2,7 @@ import React from 'react';
 import './Display.css';
 import ActionButton from '../ButtonComponents/ActionButton';
 import NumberButton from '../ButtonComponents/NumberButton';
+import OperatorButton from '../ButtonComponents/OperatorButton';
 
 // let actionBtnArr = [
 //     {
@@ -17,12 +18,14 @@ import NumberButton from '../ButtonComponents/NumberButton';
 
 const ClearBtn = {
     name: 'Clear',
-    value: 'none'
+    value: 'none',
+    actionBtnClassName: 'clear-btn'
 };
 
 const ZeroBtn ={
     name: '0',
-    value: 0
+    value: 0,
+    actionBtnClassName: 'zero-btn'
 }
 
 let calcDigits =[
@@ -112,13 +115,15 @@ const CalculatorDisplay = () => {
                     <ActionButton actionBtnProp = {ClearBtn} /> 
                     <div className="digits">
                         {calcDigits.map(digit =>(
-                            <NumberButton numProp ={digit} />
+                            <NumberButton numProp = {digit} />
                         ))}
                     </div>
                     <ActionButton actionBtnProp = {ZeroBtn} /> 
                 </div>
                 <div className="red-btns">
-                
+                    {operators.map(operator =>(
+                        <OperatorButton opProp = {operator} />
+                    ))}            
                 </div>
             </div>
         </div>
